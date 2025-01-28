@@ -165,6 +165,7 @@
 
     <h1>Chúc Mừng Năm Mới 2025 🎉</h1>
     <p>Bốc thăm lì xì mừng năm mới nào !!!</p>
+    <p>Lưu ý: Bốc lì xì xong gửi vào facebook: <a href="https://www.facebook.com/hdang26012002">Hải Đăng</a></p>
 
     <div class="container">
         <div class="participant" id="participant">
@@ -181,12 +182,12 @@
         // Hàm bốc thăm
         function luckyDraw() {
             if (hasDrawn) {
-                alert("Bạn đã bốc thăm rồi!");
+                alert("Không phải ăn gian nhé, bạn đã bốc thăm rồi !");
                 return;
             }
 
             // Chọn ngẫu nhiên mệnh giá lì xì từ 1 đến 50000
-            let luckyAmount = Math.floor(Math.random() * 50000) + 1;
+            let luckyAmount = Math.floor(Math.random() * 40000) + 1;
 
             // Hiển thị mệnh giá lên giao diện
             document.getElementById("amount").textContent = luckyAmount + " VND";
