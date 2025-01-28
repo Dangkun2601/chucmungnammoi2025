@@ -7,7 +7,7 @@
     <style>
         /* Cài đặt nền và font chữ */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             text-align: center;
             background: linear-gradient(135deg, #ff6a00, #ff6347);
             padding: 20px;
@@ -95,7 +95,14 @@
             cursor: not-allowed;
             box-shadow: none;
         }
-
+        a:link {
+            color: rgb(10, 0, 15);
+            background-color: transparent;
+            text-decoration: none;}
+        a:hover{
+            color: #fff;
+            text-decoration: underline;
+        }
         /* LED chạy 7 màu */
         .led-stripe {
             position: absolute;
@@ -164,12 +171,11 @@
     <div class="led-stripe"></div>
 
     <h1>Chúc Mừng Năm Mới 2025 🎉</h1>
-    <p>Bốc thăm lì xì mừng năm mới nào !!!</p>
-    <p>Lưu ý: Bốc lì xì xong gửi vào facebook: <a href="https://www.facebook.com/hdang26012002">Hải Đăng</a></p>
-
+    <p>Bốc thăm lì xì mừng năm mới nào !</p>
+    <p>Bốc xong vui lòng chụp ảnh và gửi về Facebook: <a href="https://www.facebook.com/hdang26012002">Hải Đăng</a></p>
     <div class="container">
         <div class="participant" id="participant">
-            <h2>Người Duy Nhất Bốc Thăm</h2>
+            <h2>Bốc lì xì đi bạn ơii</h2>
             <button class="btn" id="drawBtn" onclick="luckyDraw()">Bốc Thăm</button>
             <p class="amount" id="amount">Chưa bốc</p>
         </div>
@@ -182,11 +188,11 @@
         // Hàm bốc thăm
         function luckyDraw() {
             if (hasDrawn) {
-                alert("Không phải ăn gian nhé, bạn đã bốc thăm rồi !");
+                alert("Định ăn gian à, không dễ vậy đâu cưng :3");
                 return;
             }
 
-            // Chọn ngẫu nhiên mệnh giá lì xì từ 1 đến 50000
+            // Chọn ngẫu nhiên mệnh giá lì xì từ 1 đến 40000
             let luckyAmount = Math.floor(Math.random() * 40000) + 1;
 
             // Hiển thị mệnh giá lên giao diện
@@ -202,3 +208,4 @@
 
 </body>
 </html>
+
